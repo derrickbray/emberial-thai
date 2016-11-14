@@ -1,0 +1,13 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 10rem;
+  height: 10vh;
+  background: #612856;
+  text-align: center;
+
+  &__content {
+    color: #cfc5cd;
+  }
+}

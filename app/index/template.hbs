@@ -9,18 +9,21 @@
       <h2 class="grid__item--head">{{ menu.name }}</h2>
 
       {{#each menu.menuItems as |x|}}
-      <div class="grid__item--left">
-        <div class="grid__item--wide">
-          <p class="grid__item--name">{{ x.name }}</p>
-          <p class="grid__item--price">{{ x.price }}</p>
+      <div class="grid__item--flex">
+
+        <div class="grid__item--left">
+          <h2 class="grid__item--name">{{ x.name }}</h2>
+          <p class="grid__item--info">{{ x.description }}</p>
         </div>
-        <div class="grid__item--info">{{ x.description }}</div>
+
+        <div class="grid__item--right">
+          <p class="grid__item--price">{{ x.price }}</p>
+          <button class="grid__item--btn">Order</button>
+        </div>
+
       </div>
 
-      {{/each}}
-      <div class="grid__item--right">
-        <button class="grid__item--btn">Order</button>
-      </div>
+        {{/each}}
     </div>
 
     {{/each}}
