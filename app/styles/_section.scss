@@ -1,9 +1,10 @@
 .app {
   &__top {
     padding: 1rem;
-    border-bottom: 0.1rem solid #333;
+    background: #285761;
   }
   &__content {
-    padding: 1rem;
+    // padding: 1rem;
+    // border: 1px solid black;
   }
 }
