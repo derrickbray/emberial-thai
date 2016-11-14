@@ -1,0 +1,23 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  &--centered {
+    justify-content: center;
+  }
+  &__item {
+    flex-basis: calc(100% / 4);
+    flex-grow: 1;
+
+    &--max-half {
+      max-width: 50%;
+
+      @media (max-width: 500px) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+.card {
+  // border: 1px solid black;
+}
