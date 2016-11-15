@@ -17,46 +17,11 @@ $m-container: 70rem;
 @import "_card";
 @import "_hero";
 
-.grid__flex {
-  display: flex;
-}
+.box {
+  border: 1px solid black;
 
-.grid {
-  display: flex;
-  flex-direction: column;
-  margin: 3rem auto;
-
-  &__item {
-    width: 100%;
-    margin: 2rem;
-    // border: 1px solid black;
-
-    &--head {
-      margin: 0;
-      padding: 1rem;
-      background: $c-primary;
-      color: $c-white;
-    }
-
-    &--flex {
-      display: flex;
-      justify-content: space-between;
-      border: 1px solid black;
-
-    }
-    &--right {
-      display: flex;
-    }
-    &--btn {
-      background: $c-success;
-      color: $c-gray;
-    }
+  &__title {
+    padding: 1rem;
+    border-bottom: 1px solid $c-black;
   }
-}
-.menu {
-  width: 55%;
-}
-
-.cart {
-  width: 35%;
 }

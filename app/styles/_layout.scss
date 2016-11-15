@@ -1,23 +1,38 @@
 .grid {
+  margin: 2rem auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 
-  &--centered {
-    justify-content: center;
+  &__left {
+    width: 55%;
   }
-  &__item {
-    flex-basis: calc(100% / 4);
-    flex-grow: 1;
 
-    &--max-half {
-      max-width: 50%;
-
-      @media (max-width: 500px) {
-        max-width: 100%;
-      }
-    }
+  &__right {
+    width: 35%;
   }
 }
-.card {
-  // border: 1px solid black;
-}
+
+
+
+
+
+//   &--centered {
+//     justify-content: center;
+//   }
+//   &__item {
+//     flex-basis: calc(100% / 4);
+//     flex-grow: 1;
+//
+//     &--max-half {
+//       max-width: 50%;
+//
+//       @media (max-width: 500px) {
+//         max-width: 100%;
+//       }
+//     }
+//   }
+// }
+// .card {
+//   // border: 1px solid black;
+// }
