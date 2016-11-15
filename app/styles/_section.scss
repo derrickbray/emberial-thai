@@ -1,9 +1,15 @@
 .app {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+
   &__top {
     padding: 1rem;
     background: $c-primary;
   }
   &__content {
+    flex-grow: 1;
     background: $c-gray;
   }
 }
