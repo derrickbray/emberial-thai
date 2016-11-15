@@ -5,13 +5,13 @@
   <div class="grid">
 
     <div class="grid__left">
-      <div class="box">
-        <h2 class="box__title">Menu</h2>
+      <div class="card">
+        <h2 class="card__title">Menu</h2>
         {{#each model as |menu|}}
         <h2 class="card__head">{{ menu.name }}</h2>
 
         <div class="card__item">
-          <div class="card__item--flex">
+
             {{#each menu.menuItems as |x|}}
 
             <div class="card__item--left">
@@ -25,15 +25,15 @@
             </div>
             {{/each}}
 
-          </div>
+
         </div>
         {{/each}}
       </div>
     </div>
 
     <div class="grid__right">
-      <div class="box">
-        <h2 class="box__title">Your Order</h2>
+      <div class="card">
+        <h2 class="card__title">Your Order</h2>
         <h2 class="card__head">Cart</h2>
 
       </div>

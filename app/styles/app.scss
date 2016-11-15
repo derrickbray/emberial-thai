@@ -1,15 +1,14 @@
-$c-primary: #265762 ;
+$c-primary: #265762;
 $c-secondary: adjust-hue(#265762 , 120deg);
 $c-white: #fff;
-$c-black: #261C1B ;
-$c-gray: #E8E8E8 ;
-$c-dark-gray: #261C1B ;
-$c-success: #5EAB9B ;
-$c-warning: #C42332 ;
+$c-black: #261C1B;
+$c-gray: #E8E8E8;
+$c-dark-gray: #261C1B;
+$c-success: #5EAB9B;
+$c-warning: #C42332;
 
 $m-gutter: 1rem;
 $m-container: 70rem;
-
 @import "_section";
 @import "_layout";
 @import "_top-nav";
@@ -17,11 +16,40 @@ $m-container: 70rem;
 @import "_card";
 @import "_hero";
 
-.box {
-  border: 1px solid black;
+.card {
+  // display: flex;
+  // flex-direction: column;
+  margin: 1rem auto;
+  // border: 1px solid black;
 
   &__title {
     padding: 1rem;
     border-bottom: 1px solid $c-black;
+  }
+
+  &__head {
+    margin: 0;
+    padding: 1rem;
+    background: $c-primary;
+  }
+
+  &__item {
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    // width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+
+    &--left {
+      width: 70%;
+    }
+
+    &--right {
+      display: flex;
+      justify-content: space-between;
+    }
+
   }
 }
