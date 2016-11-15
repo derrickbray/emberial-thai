@@ -17,6 +17,10 @@ $m-container: 70rem;
 @import "_card";
 @import "_hero";
 
+.grid__flex {
+  display: flex;
+}
+
 .grid {
   display: flex;
   flex-direction: column;
@@ -51,4 +55,8 @@ $m-container: 70rem;
 }
 .menu {
   width: 55%;
+}
+
+.cart {
+  width: 35%;
 }
