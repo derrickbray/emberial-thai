@@ -1,1 +1,49 @@
+.card {
+  margin: 1rem auto;
+  box-shadow:  0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
 
+  &__title {
+    padding: 1rem;
+    border-bottom: 1px solid $c-black;
+  }
+
+  &__head {
+    margin: 0;
+    padding: 1rem;
+    background: $c-primary;
+    color: $c-white;
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &--left {
+      flex-grow: 1;
+      padding: 1rem;
+      border-bottom: 1px solid $c-dark-gray;
+    }
+
+    &--info {
+      margin: 0;
+    }
+
+    &--price {
+      // padding: 1rem;
+    }
+
+    &--btn {
+      border: 0;
+      border-bottom: 1px solid $c-dark-gray;;
+      background: $c-success;
+      color: $c-white;
+    }
+
+  }
+}
+
+.flexi {
+  display: flex;
+  justify-content: space-between;
+}

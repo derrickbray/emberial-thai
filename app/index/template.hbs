@@ -5,35 +5,35 @@
   <div class="grid">
 
     <div class="grid__left">
-      <div class="card">
-        <h2 class="card__title">Menu</h2>
-        {{#each model as |menu|}}
-        <h2 class="card__head">{{ menu.name }}</h2>
+      <h2 class="card__title">Menu</h2>
+      {{#each model as |menu|}}
+        <div class="card">
+          <h2 class="card__head">{{ menu.name }}</h2>
 
-        <div class="card__item">
 
-            {{#each menu.menuItems as |x|}}
+          {{#each menu.menuItems as |x|}}
+            <div class="card__item">
 
-            <div class="card__item--left">
-              <h2 class="card__item--name">{{ x.name }}</h2>
-              <p class="card__item--info">{{ x.description }}</p>
-            </div>
+              <div class="card__item--left">
+                <div class="flexi">
+                  <h2 class="card__item--name">{{ x.name }}</h2>
+                  <p class="card__item--price">{{ x.price }}</p>
+                </div>
+                <p class="card__item--info">{{ x.description }}</p>
+              </div>
 
-            <div class="card__item--right">
-              <p class="card__item--price">{{ x.price }}</p>
               <button class="card__item--btn">Order</button>
             </div>
-            {{/each}}
+          {{/each}}
 
 
         </div>
-        {{/each}}
-      </div>
+      {{/each}}
     </div>
 
     <div class="grid__right">
+      <h2 class="card__title">Your Order</h2>
       <div class="card">
-        <h2 class="card__title">Your Order</h2>
         <h2 class="card__head">Cart</h2>
 
       </div>
