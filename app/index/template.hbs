@@ -2,49 +2,41 @@
   <h1 class="hero__content">Get Food Delivered FAST!</h1>
 </div>
 <div class="container">
-  <div class="grid__flex">
-    <div class="grid menu">
-      {{#each model as |menu|}}
+  <div class="grid">
 
-        <div class="grid__item">
-          <h2 class="grid__item--head">{{ menu.name }}</h2>
+    <div class="grid__left">
+      <div class="box">
+        <div class="box__title">stuff</div>
+        {{#each model as |menu|}}
+        <div class="card__head">{{ menu.name }}</div>
 
-          {{#each menu.menuItems as |x|}}
-            <div class="grid__item--flex">
+        <div class="card__item">
+          <div class="card__item--flex">
+            {{#each menu.menuItems as |x|}}
 
-              <div class="grid__item--left">
-                <h2 class="grid__item--name">{{ x.name }}</h2>
-                <p class="grid__item--info">{{ x.description }}</p>
-              </div>
-
-              <div class="grid__item--right">
-                <p class="grid__item--price">{{ x.price }}</p>
-                <button class="grid__item--btn">Order</button>
-              </div>
-
+            <div class="card__item--left">
+              <h2 class="card__item--name">{{ x.name }}</h2>
+              <p class="card__item--info">{{ x.description }}</p>
             </div>
 
-          {{/each}}
-        </div>
+            <div class="card__item--right">
+              <p class="card__item--price">{{ x.price }}</p>
+              <button class="card__item--btn">Order</button>
+            </div>
+            {{/each}}
 
-      {{/each}}
+          </div>
+        </div>
+        {{/each}}
+      </div>
     </div>
-    <div class="grid cart">
-      <div class="grid__item">
-        <h2 class="grid__item--head">Cart</h2>
-        <div class="grid__item--flex">
-          <div class="grid__item--left">
-            <h2 class="grid__item--name">name of food</h2>
-            <div class="grid__item--info">info about the food</div>
-          </div>
-        </div>
-          <div class="grid__item--flexrow">
-            <div class="total__box">
-              <h3 class="total__box--total">Total</h3>
-              <h3 class="total__box--price">$10</h3>
-            </div>
-          </div>
+
+    <div class="grid__right">
+      <div class="box">
+
+        <div class="card__head">Cart</div>
+
+      </div>
     </div>
   </div>
-</div>
 </div>
