@@ -18,36 +18,20 @@ $m-container: 70rem;
 @import "_buttons";
 @import "_admin-form";
 @import "_admin-cat";
+@import "_new-input";
 
-.new-input {
-  width: 100%;
-  outline: none;
-  font-size: 1.5rem;
-
-  &__box {
-    width: 100%;
-    background: $c-white;
-  }
-  &__border {
-    padding: 1rem;
-    border-bottom: 1px solid $c-gray;
-  }
-}
-
-.button__box {
+.price {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  &-btn {
+    padding: 0.6rem;
+    border: 1px solid $c-black;
+    border-right: 0;
+    background: $c-gray;
+    color: $c-black;
+    outline: none;
+  }
+  &-input {
 
-  &--btn {
-    padding: 1rem;
-    border: 0;
-    background: $c-success;
-    color: $c-white;
-
-    & a {
-      text-decoration: none;
-      color: $c-white;
-    }
   }
 }

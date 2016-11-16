@@ -11,6 +11,7 @@ Router.map(function() {
     this.route('category', function() {
       this.route('new');
       this.route('detail');
+      this.route('new-item');
     });
   });
 });

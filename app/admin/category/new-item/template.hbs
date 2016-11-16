@@ -1,0 +1,38 @@
+{{outlet}}
+<div class="container">
+  <div class="grid">
+    <div class="grid__left full-width">
+      <div class="card">
+        <div class="card__head">New Menu Item For</div>
+
+          <form class="new-input__box" {{action "saveForm" category on="submit"}}>
+            <div class="new-input__border">
+
+              <div class="new-input__input">
+                <div class="new-input__title">Name</div>
+                {{input class="new-input" type="text" value=menuitem}}
+              </div>
+
+              <div class="new-input__title">Price</div>
+              <div class="new-input__input price">
+                <button class="button__box--btn price-btn" type="button" name="button">$</button>
+                {{input class="new-input price-input" type="text" value=price}}
+              </div>
+
+              <div class="new-input__input">
+                <div class="new-input__title">Description</div>
+                {{input class="new-input" type="text" value=description}}
+              </div>
+            </div>
+            <div class="button__box">
+              <button class="button__box--btn" type="submit" name="button">
+                {{#link-to "admin.category.index"}}Back{{/link-to}}
+              </button>
+              <button class="button__box--btn" type="submit" name="button">Submit</button>
+            </div>
+          </form>
+
+      </div>
+    </div>
+  </div>
+</div>
