@@ -5,18 +5,22 @@
       <h2 class="card__title">Categories</h2>
       <div class="card">
 
-          <form class="admin__cat-form" {{action "saveForm" category on="submit"}}>
-            {{input class="admin__cat-input" type="text" placeholder="Category" value=category}}
-            <button class="admin__cat-btn" type="submit" name="button">Add New</button>
-          </form>
-
+        <form class="admin__cat-form" {{action "saveForm" category on="submit"}}>
+          {{input class="admin__cat-input" type="text" placeholder="Category" value=category}}
+          <button class="admin__cat-btn" type="submit" name="button">Add New</button>
+        </form>
 
         <div class="card__item">
           <div class="admin__title">Name</div>
+          {{#each model as |menu|}}
             <div class="admin__result">
-              <h2 class="admin__result--title">new food</h2>
-              <div class="admin__result--link">{{#link-to "admin"}}Details{{/link-to}}</div>
+              <h2 class="admin__result--title">{{ menu.name }}</h2>
+              <div class="admin__result--link">
+                {{#link-to "admin"}}Details{{/link-to}}
+              </div>
             </div>
+          {{/each}}
+
         </div>
       </div>
     </div>
