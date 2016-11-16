@@ -16,3 +16,25 @@ $m-container: 70rem;
 @import "_card";
 @import "_hero";
 @import "_buttons";
+@import "_admin-form";
+
+.admin__title {
+width: 100%;
+}
+
+.admin__result {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 100%;
+  padding: 1rem;
+  background: $c-white;
+
+  &--title {
+    margin: 0;
+  }
+  &--link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
