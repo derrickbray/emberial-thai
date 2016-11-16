@@ -13,14 +13,15 @@
 .admin__btn {
   margin-top: 3rem;
 
+  & a {
+    color: $c-white;
+    text-decoration: none;
+  }
   &--btn {
     padding: 1rem;
     border: 0;
-    background: $c-success;
+    background: $c-primary;
+    color: $c-white
 
-    & a {
-      color: $c-white;
-      text-decoration: none;
-    }
   }
 }

@@ -1,0 +1,22 @@
+.admin__title {
+width: 100%;
+padding: 1rem;
+}
+
+.admin__result {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid $c-gray;
+  background: $c-white;
+
+  &--title {
+    margin: 0;
+  }
+  &--link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

@@ -15,6 +15,10 @@
   &-btn {
     border: 0;
     background: $c-success;
-    color: $c-white;
+
+    & a {
+      color: $c-white;
+      text-decoration: none;
+    }
   }
 }

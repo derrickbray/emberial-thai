@@ -17,26 +17,37 @@ $m-container: 70rem;
 @import "_hero";
 @import "_buttons";
 @import "_admin-form";
+@import "_admin-cat";
 
-.admin__title {
-width: 100%;
-padding: 1rem;
+.new-input {
+  width: 100%;
+  outline: none;
+  font-size: 1.5rem;
+
+  &__box {
+    width: 100%;
+    background: $c-white;
+  }
+  &__border {
+    padding: 1rem;
+    border-bottom: 1px solid $c-gray;
+  }
 }
 
-.admin__result {
+.button__box {
   display: flex;
   justify-content: space-between;
-  flex-basis: 100%;
   padding: 1rem;
-  border-bottom: 1px solid $c-gray;
-  background: $c-white;
 
-  &--title {
-    margin: 0;
-  }
-  &--link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  &--btn {
+    padding: 1rem;
+    border: 0;
+    background: $c-success;
+    color: $c-white;
+
+    & a {
+      text-decoration: none;
+      color: $c-white;
+    }
   }
 }
