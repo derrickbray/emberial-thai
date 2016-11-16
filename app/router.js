@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('admin', function() {
     this.route('category', function() {
       this.route('new');
+      this.route('detail');
     });
   });
 });
