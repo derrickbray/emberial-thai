@@ -3,18 +3,18 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
 
   actions: {
-  saveForm(menuitem, price, description) {
-    if (menuitem && price && description) {
-      const menuitem = this.store.createRecord('menu-item', { menuitem, price, description });
+  saveForm(formValues) {
+    if (formValues) {
+      const menuItem = this.store.createRecord('menu-item', { formValues });
 
-      menuitem.save()
+      menuItem.save()
         .then(() => {
-          alert('you did it');
+          alert('It Worked!');
 
-          this.transitionToRoute('project.index');
+          this.transitionToRoute('index');
         });
     } else {
-      alert('fill it in');
+      alert('It No Work!');
     }
   },
 },

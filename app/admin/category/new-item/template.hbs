@@ -5,23 +5,23 @@
       <div class="card">
         <div class="card__head">New Menu Item For</div>
 
-          <form class="new-input__box" {{action "saveForm" category on="submit"}}>
+          {{#simple-form class="new-input__box" onsubmit=(action "saveForm") as | formValues | }}
             <div class="new-input__border">
 
               <div class="new-input__input">
                 <div class="new-input__title">Name</div>
-                {{input class="new-input" type="text" value=menuitem}}
+                {{input class="new-input" type="text" required=true value=formValues.name}}
               </div>
 
               <div class="new-input__title">Price</div>
               <div class="new-input__input price">
                 <button class="button__box--btn price-btn" type="button" name="button">$</button>
-                {{input class="new-input price-input" type="text" value=price}}
+                {{input class="new-input price-input" type="text" required=true value=formValues.price}}
               </div>
 
               <div class="new-input__input">
                 <div class="new-input__title">Description</div>
-                {{input class="new-input" type="text" value=description}}
+                {{input class="new-input" type="text" value=formValues.description}}
               </div>
             </div>
             <div class="button__box">
