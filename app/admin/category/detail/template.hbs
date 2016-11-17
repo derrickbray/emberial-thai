@@ -2,8 +2,7 @@
 <div class="container">
   <div class="grid">
     <div class="grid__left full-width">
-      {{#each model as |menu|}}
-      <h2 class="card__title">{{ menu.name }}</h2>
+      <h2 class="card__title">{{ model.name }}</h2>
       <div class="card">
 
         <form class="admin__cat-form" {{action "saveForm" category on="submit"}}>
@@ -15,12 +14,12 @@
 
         <div class="card__item">
           <div class="admin__title">Name</div>
-          {{#each menu.menuItems as |x|}}
+          {{#each model.menuItems as |x|}}
 
             <div class="admin__result">
               <h2 class="admin__result--title">{{ x.name }}</h2>
               <div class="admin__result--link">
-                {{#link-to "admin.category.detail"}}Details{{/link-to}}
+                {{#link-to "admin.category.detail" model.id}}Details{{/link-to}}
               </div>
             </div>
             {{/each}}
@@ -28,7 +27,6 @@
 
 
       </div>
-      {{/each}}
     </div>
   </div>
 </div>

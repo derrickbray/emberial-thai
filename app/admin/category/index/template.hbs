@@ -18,7 +18,7 @@
             <div class="admin__result">
               <h2 class="admin__result--title">{{ menu.name }}</h2>
               <div class="admin__result--link">
-                {{#link-to "admin.category.detail"}}Details{{/link-to}}
+                {{#link-to "admin.category.detail" menu.id}}Details{{/link-to}}
               </div>
             </div>
           {{/each}}
