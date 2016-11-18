@@ -5,11 +5,10 @@
       <h2 class="card__title">{{ model.name }}</h2>
       <div class="card">
 
-        <form class="admin__cat-form" {{action "destroyRecord" model on="submit"}}>
-          <button type="submit" class="button-delete" name="button">Delete</button>
-          {{input class="admin__cat-input" type="text" value=category}}
+        <div class="admin__cat-form">
+          <button class="button-delete" {{action "destroyRecord" model}}>Delete</button>
           {{#link-to "admin.category.new-item" model.id class="admin__cat-btn" }}Add New Menu Item{{/link-to}}
-        </form>
+        </div>
 
         <div class="card__item">
           <div class="admin__title">Name</div>
@@ -18,8 +17,9 @@
             <div class="admin__result">
               <h2 class="admin__result--title">{{ x.name }}</h2>
               <div class="admin__result--link">
-                {{#link-to "admin.category.detail" model.id}}Edit{{/link-to}}
-                {{#link-to "admin.category.detail" model.id}}Delete{{/link-to}}
+                {{log x.id}}
+                {{#link-to "admin.item.edit" x.id}}Edit{{/link-to}}
+                <a href="#" {{action "destroyRecord" x}}>Delete</a>
               </div>
             </div>
           {{/each}}

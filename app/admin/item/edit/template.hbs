@@ -3,9 +3,9 @@
   <div class="grid">
     <div class="grid__left full-width">
       <div class="card">
-        <div class="card__head">New Menu Item For  {{ model.name}}</div>
+        <div class="card__head">Edit: {{ model.name }}</div>
 
-        {{#simple-form class="new-input__box" onsubmit=(action "saveForm") as | formValues |}}
+        {{#simple-form class="new-input__box" startingValues=model onsubmit=(action "saveForm") as | formValues |}}
           <div class="new-input__border">
 
             <div class="new-input__input">
