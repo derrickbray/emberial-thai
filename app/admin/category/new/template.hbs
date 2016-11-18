@@ -5,11 +5,11 @@
       <div class="card">
         <div class="card__head">New Category</div>
 
-          <form class="new-input__box" {{action "saveForm" category on="submit"}}>
+          {{#simple-form class="new-input__box" onsubmit=(action "saveForm") as | formValues |}}
             <div class="new-input__border">
               <div class="new-input__input">
                 <div class="new-input__title">Name</div>
-                {{input class="new-input" type="text" value=category}}
+                {{input class="new-input" type="text" value=category required=true value=formValues.name}}
               </div>
             </div>
             <div class="button__box">
@@ -18,7 +18,7 @@
               </div>
               <button class="button__box--btn" type="submit" name="button">Submit</button>
             </div>
-          </form>
+          {{/simple-form}}
 
       </div>
     </div>

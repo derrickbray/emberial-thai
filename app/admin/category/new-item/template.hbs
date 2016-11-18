@@ -1,11 +1,11 @@
-{{outlet}}
+{{ outlet }}
 <div class="container">
   <div class="grid">
     <div class="grid__left full-width">
       <div class="card">
         <div class="card__head">New Menu Item For</div>
 
-          {{#simple-form class="new-input__box" onsubmit=(action "saveForm") as | formValues | }}
+          {{#simple-form class="new-input__box" onsubmit=(action "saveForm") as | formValues |}}
             <div class="new-input__border">
 
               <div class="new-input__input">
@@ -30,7 +30,7 @@
               </div>
               <button class="button__box--btn" type="submit" name="button">Submit</button>
             </div>
-          </form>
+          {{/simple-form}}
 
       </div>
     </div>

@@ -4,5 +4,5 @@ export default DS.Model.extend({
   name: DS.attr('string'),
   description: DS.attr('string'),
   price: DS.attr('number'),
-  category: DS.belongsTo('menu-category')
+  menuCategory: DS.belongsTo('menu-category')
 });

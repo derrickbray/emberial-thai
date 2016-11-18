@@ -8,7 +8,7 @@
         <form class="admin__cat-form" {{action "saveForm" category on="submit"}}>
           {{input class="admin__cat-input" type="text" value=category}}
           <div class="admin__cat-btn">
-            {{#link-to "admin.category.new-item"}}Add New{{/link-to}}
+            {{#link-to "admin.category.new-item" model.id}}Add New{{/link-to}}
           </div>
         </form>
 
