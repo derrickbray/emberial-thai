@@ -6,10 +6,8 @@
       <div class="card">
 
         <form class="admin__cat-form" {{action "saveForm" category on="submit"}}>
-          {{input class="admin__cat-input" type="text" placeholder="Category" value=category}}
-          <div class="admin__cat-btn">
-            {{#link-to "admin.category.new"}}Add New{{/link-to}}
-          </div>
+          {{input class="admin__cat-input" type="text" value=category}}
+          {{#link-to "admin.category.new" class="admin__cat-btn" }}Add New{{/link-to}}
         </form>
 
         <div class="card__item">

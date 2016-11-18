@@ -6,10 +6,9 @@
       <div class="card">
 
         <form class="admin__cat-form" {{action "saveForm" category on="submit"}}>
+          <button type="submit" class="button-delete" name="button">Delete</button>
           {{input class="admin__cat-input" type="text" value=category}}
-          <div class="admin__cat-btn">
-            {{#link-to "admin.category.new-item" model.id}}Add New{{/link-to}}
-          </div>
+          {{#link-to "admin.category.new-item" model.id class="admin__cat-btn" }}Add New{{/link-to}}
         </form>
 
         <div class="card__item">
@@ -19,11 +18,12 @@
             <div class="admin__result">
               <h2 class="admin__result--title">{{ x.name }}</h2>
               <div class="admin__result--link">
-                {{#link-to "admin.category.detail" model.id}}Details{{/link-to}}
+                {{#link-to "admin.category.detail" model.id}}Edit{{/link-to}}
+                {{#link-to "admin.category.detail" model.id}}Delete{{/link-to}}
               </div>
             </div>
-            {{/each}}
-          </div>
+          {{/each}}
+        </div>
 
 
       </div>
