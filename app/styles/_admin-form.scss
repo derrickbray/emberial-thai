@@ -19,10 +19,8 @@
     background: $c-success;
     text-align: center;
     font-size: 0.7rem;
+    color: $c-white;
+    text-decoration: none;
 
-    & a {
-      color: $c-white;
-      text-decoration: none;
-    }
   }
 }

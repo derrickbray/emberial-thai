@@ -7,7 +7,7 @@ export default Ember.Controller.extend({
 
       this.model.save()
         .then(() => {
-          this.transitionToRoute('admin.category.index');
+          this.transitionToRoute('admin.category.detail', this.get('model.menuCategory.id'));
         });
     },
   },

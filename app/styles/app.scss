@@ -35,3 +35,10 @@ $m-container: 70rem;
 
   }
 }
+.button-delete {
+  padding: 0.6rem;
+  border: 1px solid $c-white;
+  background: $c-warning;
+  color: $c-white;
+  outline: none;
+}
