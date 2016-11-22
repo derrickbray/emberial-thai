@@ -12,7 +12,7 @@ export default Ember.Controller.extend({
         .then(() => {
           alert('It Worked!');
 
-          this.transitionToRoute('admin.category.index');
+          this.transitionToRoute('admin.category.detail', this.model);
         });
     } else {
       alert('It No Work!');

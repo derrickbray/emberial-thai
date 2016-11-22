@@ -15,7 +15,7 @@
 
             <div class="new-input__title">Price</div>
             <div class="new-input__input price">
-              <button class="button__box--btn price-btn" type="button" name="button">$</button> {{input class="new-input price-input" type="text" required=true value=formValues.price}}
+              <span class="button__box--btn price-btn">$</span> {{input class="new-input price-input" type="text" required=true value=formValues.price}}
             </div>
 
             <div class="new-input__input">
@@ -24,7 +24,7 @@
             </div>
           </div>
           <div class="button__box">
-            {{#link-to "admin.category.index" class="button__box--btn" }}Back{{/link-to}}
+            {{#link-to "admin.category.detail" model class="button__box--btn" }}Back{{/link-to}}
             <button class="button__box--btn" type="submit" name="button">Submit</button>
           </div>
         {{/simple-form}}
