@@ -1,5 +1,5 @@
 <div class="hero">
-  <h1 class="hero__content">Get Food Delivered FAST!</h1>
+  {{!-- <h1 class="hero__content">Get Food Delivered FAST!</h1> --}}
 </div>
 <div class="container">
   <div class="grid">
@@ -17,12 +17,12 @@
               <div class="card__item--left">
                 <div class="flexi">
                   <h2 class="card__item--name">{{ x.name }}</h2>
-                  <p class="card__item--price">{{ x.price }}</p>
+                  <p class="card__item--price">${{ x.price }}</p>
                 </div>
                 <p class="card__item--info">{{ x.description }}</p>
               </div>
 
-              <button class="card__item--btn">Order</button>
+              {{!-- <button class="card__item--btn">Order</button> --}}
             </div>
           {{/each}}
 
@@ -31,7 +31,7 @@
       {{/each}}
     </div>
 
-    <div class="grid__right">
+    {{!-- <div class="grid__right">
       <h2 class="card__title">Your Order</h2>
       <div class="card">
         <h2 class="card__head">Cart</h2>
@@ -49,6 +49,6 @@
           <button class="submit__btn">Submit</button>
         </div>
       </div>
-    </div>
+    </div> --}}
   </div>
 </div>

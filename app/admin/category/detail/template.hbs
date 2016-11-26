@@ -17,8 +17,8 @@
             <div class="admin__result">
               <h2 class="admin__result--title">{{ x.name }}</h2>
               <div class="admin__result--link">
-                {{#link-to "admin.item.edit" x.id}}Edit{{/link-to}}
-                <a href="#" {{action "destroyRecord" x}}>Delete</a>
+                {{#link-to "admin.item.edit" x.id class="link" }}Edit{{/link-to}}
+                <a href="#" class="link" {{action "destroyRecord" x}}>Delete</a>
               </div>
             </div>
           {{/each}}

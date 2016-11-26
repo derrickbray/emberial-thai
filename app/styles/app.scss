@@ -1,11 +1,12 @@
-$c-primary: #265762;
-$c-secondary: adjust-hue(#265762 , 120deg);
+// $c-primary: #265762;
+$c-primary: #607D8B;
+$c-secondary: adjust-hue(#607D8B, 120deg);
 $c-white: #fff;
 $c-black: #261C1B;
 $c-gray: #E8E8E8;
 $c-dark-gray: #261C1B;
-$c-success: #5EAB9B;
-$c-warning: #C42332;
+$c-success: #607D8B;
+$c-warning: #EF5350;
 
 $m-gutter: 1rem;
 $m-container: 70rem;
@@ -41,4 +42,8 @@ $m-container: 70rem;
   background: $c-warning;
   color: $c-white;
   outline: none;
+}
+
+.link {
+  color: $c-primary;
 }
